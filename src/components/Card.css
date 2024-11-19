@@ -1,0 +1,17 @@
+.card {
+  color: darkblue;
+  background-color: #eee;
+  padding: 1rem;
+  box-shadow: 0 0 5px #333;
+  font-size: 2rem;
+  width: 200px;
+  height: 300px;
+  line-height: 1rem;
+  margin: 10px;
+}
+
+
+.firstName {
+  font-size: 1.3rem;
+}
+
