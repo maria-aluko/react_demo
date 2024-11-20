@@ -1,7 +1,27 @@
+import Card from "../components/Card";
+import personsData from "../data/personsData";
+
 const List = () => {
   return (
-    <div>I am the List component</div>
-  )
-}
+    <div>
+      <main>
+        <>
+          <h2>Employees</h2>
+          <div className="list">
+            {personsData.map((person) => (
+              <Card
+                key={person.id}
+                firstName={person.firstName}
+                title={person.title}
+                age={person.age}
+                animal={person.animal}
+              />
+            ))}
+          </div>
+        </>
+      </main>
+    </div>
+  );
+};
 
 export default List;
