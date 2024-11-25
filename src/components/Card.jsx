@@ -1,8 +1,8 @@
-import "./Card.css"
 import { useState } from "react";
 import Button from "./Button.jsx";
+import "./Card.css"
 
-function Card({ firstName, title, age, animal }) {
+function Card({ firstName, title, age, animal, onClick }) {
   const [animalValue, setAnimalValue] = useState(animal);
   const [isEditing, setIsEditing] = useState(false);
 
@@ -10,7 +10,6 @@ function Card({ firstName, title, age, animal }) {
   const handleChange = (e) => setAnimalValue(e.target.value);
 
   return (
-    <div className="container">
       <div className="card">
         <p className="firstName">{firstName}</p>
         <p>Title: {title}</p>
@@ -20,9 +19,16 @@ function Card({ firstName, title, age, animal }) {
         ) : (
           <p>Animal: {animalValue}</p>
         )}
-        <Button onClick={toggleEdit} text={isEditing ? "Save" : "Edit"} />
+        <Button 
+          onClick={onClick}
+          text="See More"
+        />
+        <Button 
+          onClick={toggleEdit}
+          variant="secondary"
+          text={isEditing ? "Save" : "Edit"}
+        />
       </div>
-    </div>
   );
 }
 

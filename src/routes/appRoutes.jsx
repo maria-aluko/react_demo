@@ -3,6 +3,7 @@ import About from "../pages/About";
 import List from "../pages/List";
 import Root from "../pages/Root";
 import ErrorPage from "../pages/ErrorPage";
+import SinglePage from "../pages/SinglePage"
 
 export const router = createBrowserRouter([
   { 
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage/>, 
     children: [
       { path: '/list', element: <List /> },
+      { path: '/:id', element: <SinglePage />},
       { path: '/about', element: <About /> },
   ],
 },  

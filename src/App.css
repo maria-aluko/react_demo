@@ -1,29 +1,42 @@
-#root {
-  max-width: 1280px;
+main {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  width: 100vw;
+  max-width: 1400px;
 }
 
-.cardDiv {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  background-color: #252974;
+  position: sticky;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: left;
+  flex-direction: column;
+  line-height: 0.01em;
+  margin: 10px;
+}
+
+.list {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 p {
   font-size: 1rem;
-}
-
-button {
-  margin-bottom: 1rem;
-  width: 120px;
-  height: 40px;
-}
-
-button:hover {
-  background-color: #333;
 }
