@@ -1,0 +1,17 @@
+.spList {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  color: darkblue;
+  background-color: #eee;
+  padding: 1rem;
+  box-shadow: 0 0 5px #333;
+  font-size: 2rem;
+  width: 170px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+p {
+  margin: 0;
+}

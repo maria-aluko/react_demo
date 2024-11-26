@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "./Button.jsx";
-import "./Card.css"
+import './Card.css';
 
 function Card({ firstName, title, age, animal, onClick }) {
   const [animalValue, setAnimalValue] = useState(animal);

@@ -8,9 +8,7 @@ const List = () => {
   const handleNavigate = (id) => {
     navigate(`/${id}`);
   };
-
-  console.log(navigate);
-
+  
   return (
     <div>
       <main>

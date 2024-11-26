@@ -1,5 +1,4 @@
 main {
-  margin: 0 auto;
   max-width: 1400px;
 }
 
@@ -19,6 +18,12 @@ h1 a {
 
 h2 {
   text-align: center;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .card {
@@ -26,8 +31,15 @@ h2 {
   flex-wrap: wrap;
   justify-content: left;
   flex-direction: column;
-  line-height: 0.01em;
   margin: 10px;
+  color: darkblue;
+  background-color: #eee;
+  padding: 1rem;
+  box-shadow: 0 0 5px #333;
+  font-size: 2rem;
+  width: 150px;
+  height: 220px;
+  border-radius: 5px;
 }
 
 .list {

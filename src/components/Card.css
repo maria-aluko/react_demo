@@ -1,14 +1,3 @@
-.card {
-  color: darkblue;
-  background-color: #eee;
-  padding: 1rem;
-  box-shadow: 0 0 5px #333;
-  font-size: 2rem;
-  width: 150px;
-  height: 250px;
-  border-radius: 5px;
-}
-
 .firstName {
   font-size: 1.3rem;
 }
