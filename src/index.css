@@ -13,7 +13,7 @@
 
 body {
   background-color: #535bf2;
-  margin: 0;
+  margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -23,7 +23,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+.btn {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 10px;
@@ -50,9 +50,12 @@ button:hover {
   border-color: #9196fb;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+input {
+  height: 20px;
+  margin: 1px;
+  background-color: #252974;
+  border-radius: 8px;
+  padding: 3px;
 }
 
 @media (prefers-color-scheme: light) {

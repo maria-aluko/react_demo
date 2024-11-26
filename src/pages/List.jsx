@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import personsData from "../data/personsData";
-import Card from "../components/Card";
+import personsData from "../data/personsData.js";
+import Card from "../components/Card.jsx";
 
 const List = () => {
   const navigate = useNavigate();
@@ -8,6 +8,8 @@ const List = () => {
   const handleNavigate = (id) => {
     navigate(`/${id}`);
   };
+
+  console.log(navigate);
 
   return (
     <div>
